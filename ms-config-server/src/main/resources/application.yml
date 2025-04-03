@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 server:
   port: 7070
 
@@ -14,4 +15,27 @@ spring:
   security:
     user:
       name: root
+=======
+#spring.application.name=ms-config-server
+
+server:
+  port: 7070
+
+
+
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/camilamamanipaucar/DAD-2025-G2.git # ruta del repositorio git
+          searchPaths: config-data
+          default-label: main
+  security:
+    user:
+      name: root
+>>>>>>> bdeef91e8e6bc728435a7eee12b8f683c37c6c0a
       password: 123456

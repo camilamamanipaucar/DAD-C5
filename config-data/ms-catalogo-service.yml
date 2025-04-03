@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 server:
 
   port: 8081
@@ -26,3 +27,31 @@ eureka:
       defaultZone: http://localhost:8090/eureka
   instance:
     hostname: localhost
+=======
+server:
+  port: 8081
+
+
+spring:
+  application:
+    name: ms-catalogo-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/ms_catalogo
+    username: root
+    password: ""
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /doc/swagger-ui.html
+>>>>>>> bdeef91e8e6bc728435a7eee12b8f683c37c6c0a
